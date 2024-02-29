@@ -7,6 +7,7 @@ st.write("""
 # Apple Quality App
 
 **Description*
+
 This app contains information about various attributes of a set of apples, providing insights into their characteristics.
 """)
 
