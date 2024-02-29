@@ -8,7 +8,7 @@ st.write("""
 
 ### **1. Description**
 
-This app contains information about various attributes of a set of apples, providing insights into their characteristics.
+This app contains information about prediction of the apples quality rating using various attributes.
 """)
 
 st.sidebar.header('User Input Parameters') #inside sidebar, function we select is
