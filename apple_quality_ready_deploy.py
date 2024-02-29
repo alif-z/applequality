@@ -44,6 +44,7 @@ loaded_model = pickle.load(open("applequality.h5", "rb"))   #iris_model -
 prediction = loaded_model.predict(df)
 
 st.subheader('3. Prediction of Apple Quality')
+st.write("""1 = Good, 0 = Bad""")
 st.write(prediction)
 
 # add image
@@ -63,5 +64,4 @@ st.write("""
 5. Juiciness: Level of juiciness of the fruit
 6. Ripeness: Stage of ripeness of the fruit
 7. Acidity: Acidity level of the fruit
-8. Quality: Overall quality of the fruit (1 = Good, 0 = Bad)
 """)
