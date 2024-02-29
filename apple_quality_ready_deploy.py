@@ -39,7 +39,7 @@ st.write(df) #display
 
 loaded_model = pickle.load(open("applequality.h5", "rb"))   #iris_model -
 
-prediction = loaded_model.predict(df_prediction)
+prediction = loaded_model.predict(df)
 
 st.subheader('Prediction')
 st.write(prediction)
