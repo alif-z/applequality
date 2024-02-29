@@ -59,5 +59,8 @@ st.write("""
 8. Quality: Overall quality of the fruit (1 = Good, 0 = Bad)
 """)
 
+import streamlit as st
+st.image('good apple.jpg', caption='good apple')
+
 
 
