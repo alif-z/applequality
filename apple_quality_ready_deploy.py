@@ -61,9 +61,7 @@ st.write("""
 
 # add image
 
-option = prediction
-
-if option=='1':
+if prediction=='1':
     st.image('good apple.jpg', caption='Good Apple', width=100, use_column_width=100)
 else:
     st.image('bad apple.jpg', caption='Bad Apple', width=100, use_column_width=100)
