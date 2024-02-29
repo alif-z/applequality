@@ -6,7 +6,7 @@ import pickle
 st.write("""
 # Apple Quality App
 
-## **Description**
+### **1. Description**
 
 This app contains information about various attributes of a set of apples, providing insights into their characteristics.
 """)
@@ -36,14 +36,14 @@ def user_input_features():
 
 df = user_input_features()
 
-st.subheader('User Input parameters') #headler - title #subheader - sub title
+st.subheader('2. User Input parameters') #headler - title #subheader - sub title
 st.write(df) #display
 
 loaded_model = pickle.load(open("applequality.h5", "rb"))   #iris_model -
 
 prediction = loaded_model.predict(df)
 
-st.subheader('Prediction of Apple Quality')
+st.subheader('3. Prediction of Apple Quality')
 st.write(prediction)
 
 st.write("""
