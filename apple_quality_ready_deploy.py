@@ -61,8 +61,20 @@ st.write("""
 
 # add image
 
-for pred in prediction:
-    if pred == 1:
+#for pred in prediction:
+#    if pred == 1:
+#        st.image('good apple.jpg', caption='Good Apple', width=100, use_column_width=100)
+#    else:
+#        st.image('bad apple.jpg', caption='Bad Apple', width=100, use_column_width=100)
+
+# Display prediction value and corresponding image
+col1, col2 = st.beta_columns([1, 1])
+with col1:
+    st.write("Prediction:")
+    st.write(prediction)
+with col2:
+    st.write("Image:")
+    if prediction == 1:
         st.image('good apple.jpg', caption='Good Apple', width=100, use_column_width=100)
     else:
         st.image('bad apple.jpg', caption='Bad Apple', width=100, use_column_width=100)
