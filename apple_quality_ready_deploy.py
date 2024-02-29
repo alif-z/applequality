@@ -59,9 +59,9 @@ st.write("""
 8. Quality: Overall quality of the fruit (1 = Good, 0 = Bad)
 """)
 
+#adding image
 import streamlit as st
-st.image('good apple.jpg', caption='good apple',width=100, use_column_width=100)
-
-#st.image(image, caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
-
-
+if prediction == 1:
+    st.image('good apple.jpg', caption='Good Apple', width=100, use_column_width=100)
+else:
+    st.image('bad apple.jpg', caption='Bad Apple', width=100, use_column_width=100)
