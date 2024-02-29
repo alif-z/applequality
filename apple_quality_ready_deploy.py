@@ -45,9 +45,16 @@ st.subheader('Prediction of Apple Quality')
 st.write(prediction)
 
 st.write("""
-Note :
-1 = Good
-0 = Bad
+
+**Key Features**
+1. Size: Size of the fruit
+2. Weight: Weight of the fruit
+3. Sweetness: Degree of sweetness of the fruit
+4. Crunchiness: Texture indicating the crunchiness of the fruit
+5. Juiciness: Level of juiciness of the fruit
+6. Ripeness: Stage of ripeness of the fruit
+7. Acidity: Acidity level of the fruit
+8. Quality: Overall quality of the fruit (1 = Good, 0 = Bad)
 """)
 
 
