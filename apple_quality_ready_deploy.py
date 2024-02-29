@@ -45,6 +45,7 @@ prediction = loaded_model.predict(df)
 
 st.subheader('3. Prediction of Apple Quality')
 st.write("""1 = Good
+
 0 = Bad""")
 st.write(prediction)
 
