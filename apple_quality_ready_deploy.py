@@ -46,6 +46,13 @@ prediction = loaded_model.predict(df)
 st.subheader('3. Prediction of Apple Quality')
 st.write(prediction)
 
+# add image
+for pred in prediction:
+    if pred == 1:
+        st.image('good apple.jpg', caption='Good Apple', width=100, use_column_width=100)
+    else:
+        st.image('bad apple.jpg', caption='Bad Apple', width=100, use_column_width=100)
+        
 st.write("""
 
 **Key Features**
@@ -58,23 +65,3 @@ st.write("""
 7. Acidity: Acidity level of the fruit
 8. Quality: Overall quality of the fruit (1 = Good, 0 = Bad)
 """)
-
-# add image
-
-#for pred in prediction:
-#    if pred == 1:
-#        st.image('good apple.jpg', caption='Good Apple', width=100, use_column_width=100)
-#    else:
-#        st.image('bad apple.jpg', caption='Bad Apple', width=100, use_column_width=100)
-
-# Display prediction value and corresponding image
-col1, col2 = st.beta_columns([1, 1])
-with col1:
-    st.write("Prediction:")
-    st.write(prediction)
-with col2:
-    st.write("Image:")
-    if prediction == 1:
-        st.image('good apple.jpg', caption='Good Apple', width=100, use_column_width=100)
-    else:
-        st.image('bad apple.jpg', caption='Bad Apple', width=100, use_column_width=100)
