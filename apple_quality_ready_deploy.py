@@ -6,7 +6,7 @@ import pickle
 st.write("""
 # Apple Quality App
 
-This app wants to know the **Quality** of each apple!
+This app wants to know the **Quality** of each apple based on their characteristics!
 """)
 
 st.sidebar.header('User Input Parameters') #inside sidebar, function we select is
