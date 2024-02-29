@@ -41,7 +41,7 @@ loaded_model = pickle.load(open("applequality.h5", "rb"))   #iris_model -
 
 prediction = loaded_model.predict(df)
 
-st.subheader('Prediction')
+st.subheader('Prediction of Apple Quality')
 st.write(prediction)
 
 st.write("""
