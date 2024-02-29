@@ -60,7 +60,8 @@ st.write("""
 """)
 
 import streamlit as st
-st.image('good apple.jpg', caption='good apple')
+st.image('good apple.jpg', caption='good apple',width=5, use_column_width=5)
 
+#st.image(image, caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
 
 
