@@ -11,6 +11,8 @@ st.write("""
 This app contains information about prediction of the apples quality rating using various attributes.
 """)
 
+st.divider()
+
 st.sidebar.header('User Input Parameters') #inside sidebar, function we select is
 
 def user_input_features():
@@ -43,6 +45,7 @@ loaded_model = pickle.load(open("applequality.h5", "rb"))   #iris_model -
 
 prediction = loaded_model.predict(df)
 
+st.divider()
 st.subheader('3. Prediction of Apple Quality')
 st.write("""1 = Good | 0 = Bad""")
 st.write(prediction)
