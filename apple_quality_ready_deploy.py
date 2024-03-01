@@ -1,3 +1,4 @@
+ [theme]
 backgroundColor="#A52A2A"
 secondaryBackgroundColor="#A52A2A"
 
