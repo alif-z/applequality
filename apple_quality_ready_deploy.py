@@ -56,6 +56,8 @@ for pred in prediction:
         
 st.write("""
 
+st.divider()
+
 **Key Features**
 1. Size: Size of the fruit
 2. Weight: Weight of the fruit
