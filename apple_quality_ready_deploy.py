@@ -1,3 +1,4 @@
+backgroundColor="blue"
 
 import streamlit as st
 import pandas as pd
