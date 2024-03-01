@@ -54,9 +54,9 @@ for pred in prediction:
     else:
         st.image('bad apple.jpg', caption='Bad Apple', width=100, use_column_width=100)
         
-st.write("""
 
 st.divider()
+st.write("""
 
 **Key Features**
 1. Size: Size of the fruit
