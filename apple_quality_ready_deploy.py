@@ -1,4 +1,4 @@
-backgroundColor="#808080"
+backgroundColor=" #A52A2A"
 
 import streamlit as st
 import pandas as pd
